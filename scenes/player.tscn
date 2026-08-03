@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://duy3rdn6o5qwn"]
 
-[ext_resource type="Script" uid="uid://dkugip140nwn1" path="res://character_body_2d.gd" id="1_onrkg"]
-[ext_resource type="Texture2D" uid="uid://cs7voo2v3ife2" path="res://Yugo-Sheet.png" id="2_i3pqv"]
+[ext_resource type="Script" uid="uid://dkugip140nwn1" path="res://scripts/character_body_2d.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://cs7voo2v3ife2" path="res://assets/Yugo-Sheet.png" id="2_i3pqv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y3u60"]
 size = Vector2(12.019946, 13.051191)
@@ -93,22 +93,6 @@ region = Rect2(0, 128, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_606se"]
 atlas = ExtResource("2_i3pqv")
 region = Rect2(0, 160, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_op7ga"]
-atlas = ExtResource("2_i3pqv")
-region = Rect2(96, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_q13i1"]
-atlas = ExtResource("2_i3pqv")
-region = Rect2(96, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pylmc"]
-atlas = ExtResource("2_i3pqv")
-region = Rect2(96, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pbfsw"]
-atlas = ExtResource("2_i3pqv")
-region = Rect2(96, 128, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5tmop"]
 atlas = ExtResource("2_i3pqv")
@@ -211,18 +195,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_op7ga")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_q13i1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pylmc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pbfsw")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_5tmop")
 }, {
 "duration": 1.0,
@@ -250,7 +222,7 @@ shape = SubResource("RectangleShape2D_y3u60")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=527974502]
 sprite_frames = SubResource("SpriteFrames_jm5j8")
-animation = &"atk"
+animation = &"idle"
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=928187702]
 zoom = Vector2(5, 5)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tukuixicse6w"
-path="res://.godot/imported/decor.png-2447b1523dccb9dd4e5cfc229420c1a2.ctex"
+uid="uid://cs7voo2v3ife2"
+path="res://.godot/imported/Yugo-Sheet.png-b2cae3a853c2b8fbd65306fc43a5c80a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://decor.png"
-dest_files=["res://.godot/imported/decor.png-2447b1523dccb9dd4e5cfc229420c1a2.ctex"]
+source_file="res://assets/Yugo-Sheet.png"
+dest_files=["res://.godot/imported/Yugo-Sheet.png-b2cae3a853c2b8fbd65306fc43a5c80a.ctex"]
 
 [params]
 

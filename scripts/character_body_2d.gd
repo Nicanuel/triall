@@ -28,12 +28,14 @@ func _physics_process(delta: float) -> void:
 	if hp > 0:
 		if Input.is_action_pressed("av"):
 			velocity.x = speed
-			play_anim.play("dash")
+			if is_on_floor():
+				play_anim.play("dash")
 			play_anim.flip_h = false
 			
 		if Input.is_action_pressed("rec"):
 			velocity.x = -speed
-			play_anim.play("dash")
+			if is_on_floor():
+				play_anim.play("dash")
 			play_anim.flip_h = true
 			
 		if  Input.is_action_just_pressed("jump") and is_on_floor():

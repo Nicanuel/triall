@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://tukuixicse6w" path="res://assets/decor.png" id="1_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://duy3rdn6o5qwn" path="res://scenes/player.tscn" id="2_4wyf3"]
+[ext_resource type="PackedScene" uid="uid://bkdkiiilmvaoj" path="res://scenes/killzone.tscn" id="3_4wyf3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fj7yv"]
 texture = ExtResource("1_rwgxs")
@@ -37,6 +38,8 @@ texture = ExtResource("1_rwgxs")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_fj7yv")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_g4v7s"]
+
 [node name="world" type="Node2D" unique_id=726001949]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1677914657]
@@ -45,3 +48,10 @@ tile_set = SubResource("TileSet_tlwt5")
 
 [node name="player" parent="." unique_id=1359141000 instance=ExtResource("2_4wyf3")]
 position = Vector2(17, 592)
+
+[node name="Killzone" parent="." unique_id=173090855 instance=ExtResource("3_4wyf3")]
+position = Vector2(14, 668)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=1621576801]
+shape = SubResource("WorldBoundaryShape2D_g4v7s")
+one_way_collision = true

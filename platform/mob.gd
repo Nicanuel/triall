@@ -12,7 +12,6 @@ func _physics_process(_delta: float) -> void:
 	else:
 		velocity.y = 0
 	
-	
 	if chase and target != null:
 		anim.play("detection")
 		var direction = (target.global_position - global_position).normalized()
@@ -32,10 +31,7 @@ func _on_detection_body_entered(body: Node2D) -> void:
 	if body.name == "player":
 		target = body
 		chase = true
-	pass # Replace with function body.
-
 
 func _on_detection_body_exited(body: Node2D) -> void:
 	target = null
 	chase = false
-	pass # Replace with function body.

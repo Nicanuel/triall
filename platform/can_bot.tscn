@@ -278,6 +278,7 @@ animations = [{
 radius = 17.42643
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_u0ya7"]
+radius = 15.10703
 
 [node name="can bot" type="Node2D" unique_id=630638654]
 
@@ -286,8 +287,7 @@ script = ExtResource("1_k60wa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="mob" unique_id=2101920081]
 sprite_frames = SubResource("SpriteFrames_u0ya7")
-animation = &"idle"
-frame_progress = 0.26670754
+animation = &"detection"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="mob" unique_id=633101828]
 position = Vector2(0, 3)
@@ -300,6 +300,7 @@ collision_layer = 4
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="mob/detection" unique_id=1292545970]
+position = Vector2(0, -3.9047916)
 scale = Vector2(2.8799996, 2.12)
 shape = SubResource("CircleShape2D_u0ya7")
 

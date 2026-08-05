@@ -2,16 +2,10 @@
 
 [ext_resource type="Script" uid="uid://ukunhdaphkax" path="res://scripts/killzone.gd" id="1_xlapc"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_u0ya7"]
-radius = 71.568146
-
 [node name="Killzone" type="Area2D" unique_id=173090855 node_paths=PackedStringArray("timer")]
 script = ExtResource("1_xlapc")
 timer = NodePath("Timer")
 
 [node name="Timer" type="Timer" parent="." unique_id=1478065135]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1340432977]
-shape = SubResource("CircleShape2D_u0ya7")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

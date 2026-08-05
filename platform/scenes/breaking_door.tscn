@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://bmra2iq1fdenk"]
+
+[ext_resource type="Script" uid="uid://bot2nsn11qxbp" path="res://static_body_2d.gd" id="1_1u0wv"]
+[ext_resource type="Texture2D" uid="uid://ddy6gpiea6ii8" path="res://assets/BreakingDoor.png" id="2_4intw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qwktt"]
+atlas = ExtResource("2_4intw")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r0yot"]
+atlas = ExtResource("2_4intw")
+region = Rect2(32, 0, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4intw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qwktt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r0yot")
+}],
+"loop": 0,
+"name": &"Break",
+"speed": 1.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qwktt"]
+size = Vector2(32, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r0yot"]
+size = Vector2(68, 64)
+
+[node name="BreakingDoor" type="StaticBody2D" unique_id=909968181]
+script = ExtResource("1_1u0wv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1323430170]
+sprite_frames = SubResource("SpriteFrames_4intw")
+animation = &"Break"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=216274005]
+shape = SubResource("RectangleShape2D_qwktt")
+
+[node name="AreaOfActivating" type="Area2D" parent="." unique_id=8086194]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreaOfActivating" unique_id=1535370077]
+shape = SubResource("RectangleShape2D_r0yot")
+
+[connection signal="body_entered" from="AreaOfActivating" to="." method="_on_area_of_activating_body_entered"]

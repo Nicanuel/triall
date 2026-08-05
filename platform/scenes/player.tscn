@@ -94,22 +94,6 @@ region = Rect2(0, 128, 32, 32)
 atlas = ExtResource("2_i3pqv")
 region = Rect2(0, 160, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_u1c27"]
-atlas = ExtResource("2_i3pqv")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_op7ga"]
-atlas = ExtResource("2_i3pqv")
-region = Rect2(96, 32, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_q13i1"]
-atlas = ExtResource("2_i3pqv")
-region = Rect2(96, 64, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pylmc"]
-atlas = ExtResource("2_i3pqv")
-region = Rect2(96, 96, 32, 32)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_pbfsw"]
 atlas = ExtResource("2_i3pqv")
 region = Rect2(96, 128, 32, 32)
@@ -215,18 +199,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_u1c27")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_op7ga")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_q13i1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pylmc")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_pbfsw")
 }, {
 "duration": 1.0,
@@ -262,10 +234,11 @@ animation = &"jump"
 frame_progress = 0.16573146
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=928187702]
-zoom = Vector2(5, 5)
+zoom = Vector2(3.15, 3.15)
+limit_bottom = 20
 
 [node name="jump" type="Label" parent="player" unique_id=1769814458]
-offset_left = -113.0
-offset_top = -60.0
-offset_right = -44.0
-offset_bottom = -37.0
+offset_left = -155.0
+offset_top = -117.0
+offset_right = -86.0
+offset_bottom = -94.0

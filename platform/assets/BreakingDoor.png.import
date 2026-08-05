@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cv4hgt0nlv6xd"
-path="res://.godot/imported/mob.png-18c4f019c38a659aa20f656f8f8c1bb2.ctex"
+uid="uid://ddy6gpiea6ii8"
+path="res://.godot/imported/BreakingDoor.png-b5738b80be6c3ad99f9a690bb537cc42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/mob.png"
-dest_files=["res://.godot/imported/mob.png-18c4f019c38a659aa20f656f8f8c1bb2.ctex"]
+source_file="res://assets/BreakingDoor.png"
+dest_files=["res://.godot/imported/BreakingDoor.png-b5738b80be6c3ad99f9a690bb537cc42.ctex"]
 
 [params]
 

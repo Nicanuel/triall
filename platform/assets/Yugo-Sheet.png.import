@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs7voo2v3ife2"
-path="res://.godot/imported/Yugo-Sheet.png-b2cae3a853c2b8fbd65306fc43a5c80a.ctex"
+path="res://.godot/imported/Yugo-Sheet.png-260d7ffe582c02df58aab3dd5c71aa52.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Yugo-Sheet.png"
-dest_files=["res://.godot/imported/Yugo-Sheet.png-b2cae3a853c2b8fbd65306fc43a5c80a.ctex"]
+source_file="res://Yugo-Sheet.png"
+dest_files=["res://.godot/imported/Yugo-Sheet.png-260d7ffe582c02df58aab3dd5c71aa52.ctex"]
 
 [params]
 
